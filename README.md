@@ -24,8 +24,7 @@
 >
 >In the above screenshot you can see teleop_key(node) is publishing to a topic named **_turtle1_** and the turtlesim is subscribing to the same topic. Also here we can see one more topic **_turtle2_** is present and it is subscribed by the turtlesim(node). That is why we can see two turtles in the simulation window.
 >
->**APPLICATIONS**
-> 
+**APPLICATIONS**
 * Turtlesim
 * Voting system
 
@@ -36,8 +35,7 @@
 >
 >Here you can see in the screenshot. I spawned a second turtle by the name _"turtle2"_ using a rosservice _/spawn_ .
 >
->**APPLICATIONS**
-> 
+**APPLICATIONS**
 * Spawning a simulation
 * Finding a distance between point A to point B
 
@@ -51,8 +49,7 @@
 >
 >Here you can see Actions provides more features than a services does. For example- goal, cancel, status, result, feedback.
 >
->**APPLICATIONS**
-> 
+**APPLICATIONS** 
 * moving a simulation to a certain angle/parameter
 * counting system with a limit
 
