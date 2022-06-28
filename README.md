@@ -23,6 +23,11 @@
 ![alt text](https://github.com/ec21b1006/TASK_2-MARS_CLUB/tree/main/reference_ss/topics.png)
 >
 >In the above screenshot you can see teleop_key(node) is publishing to a topic named **_turtle1_** and the turtlesim is subscribing to the same topic. Also here we can see one more topic **_turtle2_** is present and it is subscribed by the turtlesim(node). That is why we can see two turtles in the simulation window.
+>
+>**APPLICATIONS**
+> 
+* Turtlesim
+* Voting system
 
 #### Services
 >It has **_ROS Server_** that provides the service and **_ROS Client_** that consumes the service. Unlike topics, service is one-time communication in which a client sends a **request**, then the server sends back a **response**.
@@ -30,14 +35,28 @@
 ![alt text](https://github.com/ec21b1006/TASK_2-MARS_CLUB/tree/main/reference_ss/services.png)
 >
 >Here you can see in the screenshot. I spawned a second turtle by the name _"turtle2"_ using a rosservice _/spawn_ .
+>
+>**APPLICATIONS**
+> 
+* Spawning a simulation
+* Finding a distance between point A to point B
+
 
 #### Actions
 >An action is an asynchronous call to another node’s functionality. “Asynchronous” means you don’t have to wait for the result. You can do other things pending the result.
 >
 >The node that provides the functionality has to implement an **_Action Server_** {Dosa shop(see the last example)}. The node that uses the functionality has to use an **_Action Client_** {online ordering system(see the last example)}.
+>
+![alt text](https://www.theconstructsim.com/wp-content/uploads/2017/12/ros_action.png)
+>
+>Here you can see Actions provides more features than a services does. For example- goal, cancel, status, result, feedback.
+>
+>**APPLICATIONS**
+> 
+* moving a simulation to a certain angle/parameter
+* counting system with a limit
 
-
->Now to understand more about services and actions we will take an example of buying dosa
+#####  Now to understand more about services and actions we will take an example of buying dosa
 
 1. Go the Dosa shop
     1. Place your order(**request**).
@@ -51,4 +70,4 @@
     5. _Do other things._
     6. Dosa is delivered(**response**).
 
->Option 1(Going to Dosa shop) is similar to a ROS Service, while option 2 is similar to a ROS Action.
+Option 1(Going to Dosa shop) is similar to a ROS Service, while option 2 is similar to a ROS Action.
