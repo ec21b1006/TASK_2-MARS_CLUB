@@ -13,9 +13,9 @@
 
 ### 2. What are the different types of node-to-node communication in ROS? Also state two applications of each type.
 
-1. Topics
-2. Services
-3. Actions
+>1. Topics
+>2. Services
+>3. Actions
 
 
 
