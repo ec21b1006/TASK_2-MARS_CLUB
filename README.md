@@ -13,9 +13,13 @@
 
 ### 2. What are the different types of node-to-node communication in ROS? Also state two applications of each type.
 
->1. Topics
->2. Services
->3. Actions
+> 1. Topics
+> 2. Services
+> 3. Actions
 
+#### TOPICS
+>As I have discussed in the previous answer **Topics** implement a publish/subscribe communication mechanism, one of the most common ways to exchange data in ROS system. Basically ROS nodes publish messages to the topics and also subscribes messages from the topics. In this communication the rate for sending/receiving data is high.
+![alt text](https://github.com/ec21b1006/TASK_2-MARS_CLUB/tree/main/reference_ss/topics.png)
+In the above screenshot you can see teleop_key(node) is publishing to a topic named **_turtle1_** and the turtlesim is subscribing to the same topic. Also here we can see one more topic **_turtle2_** is present and it is subscribed by the turtlesim(node). That is why we can see two turtles in the simulation window.
 
 
