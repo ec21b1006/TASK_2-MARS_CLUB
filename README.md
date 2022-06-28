@@ -12,5 +12,10 @@
 >From here, to share information Nodes **_publish_** messages to a topic or topics and another node/nodes that wants to receive information will **_subscribe_** to those topic or topics. ROS master ensures that publisher and subscribers find each other easily.
 
 ### 2. What are the different types of node-to-node communication in ROS? Also state two applications of each type.
----
+
+1. Topics
+2. Services
+3. Actions
+
+
 
