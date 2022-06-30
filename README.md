@@ -1,6 +1,6 @@
 # TASK_2-MARS_CLUB
 
-### 1. How does communication take place in ROS?
+### Q1. How does communication take place in ROS?
 
 >Communication mostly takes place by ROS nodes with the help of ROS MASTER. First let me define what is a node.
 >>**NODES** are basically executable files that uses ROS master to communicate with other nodes. ROS MASTER is nothing but a part of ROS that facilitates this communication between nodes.
@@ -11,7 +11,7 @@
 >
 >From here, to share information Nodes **_publish_** messages to a topic or topics and another node/nodes that wants to receive information will **_subscribe_** to those topic or topics. ROS master ensures that publisher and subscribers find each other easily.
 
-### 2. What are the different types of node-to-node communication in ROS? Also state two applications of each type.
+### Q2. What are the different types of node-to-node communication in ROS? Also state two applications of each type.
 
 > 1. Topics
 > 2. Services
@@ -69,15 +69,15 @@
 
 Option 1(Going to Dosa shop) is similar to a ROS Service, while option 2 is similar to a ROS Action.
 
-### In the above question, you have mentioned applications of the different types of node-to-node communication. For each application, propose a possible ROS architecture (graphically / pictorially) that could be used to implement it. (For your reference, the ROS architecture for communication between two nodes is provided)
+### Q3. In the above question, you have mentioned applications of the different types of node-to-node communication. For each application, propose a possible ROS architecture (graphically / pictorially) that could be used to implement it. (For your reference, the ROS architecture for communication between two nodes is provided)
 
 > REFER to my screenshots(reference_ss);
 
-### Is there a way to see or generate this architecture of node communication in ROS using a utility or software? If yes, mention it.
+### Q4. Is there a way to see or generate this architecture of node communication in ROS using a utility or software? If yes, mention it.
 
 > Yes, after executing commands for both of the nodes you can tyoe **rqt_graph** in the terminal to see this same architecture.
 
-### What are the different sensors and actuators involved in each subsystem of a typical rover?
+### Q5. What are the different sensors and actuators involved in each subsystem of a typical rover?
 
 >**MOBILITY**
 * In rovers mostly there are 6 motors that turn the wheels, so the rover can move forward or backwards, and the 4 motors that turn the outer wheels around their axes, so the rover is maneuverable.
@@ -102,7 +102,7 @@ Option 1(Going to Dosa shop) is similar to a ROS Service, while option 2 is simi
 * An abrasion tool that grinds away the outer surface of to expose fresh material.
 * Temperature sensors are required so that the components inside the rover can't get damaged.
 
-### Consider that there is a bot in front of a wall with a distance/proximity sensor mounted on it. This bot should stop moving once it reaches a certain distance from the wall. Design a ROS node communication system of three nodes to achieve this. (It is not needed to prepare a robot simulation, only basic node communication is required.)
+### Q6. Consider that there is a bot in front of a wall with a distance/proximity sensor mounted on it. This bot should stop moving once it reaches a certain distance from the wall. Design a ROS node communication system of three nodes to achieve this. (It is not needed to prepare a robot simulation, only basic node communication is required.)
 ### The 1st node contains the sensor i.e., it should generate the sensor data (current distance from the wall).
 ### The 2nd node obtains the sensor data from the 1st node and decides when the bot should stop moving. It also sends a warning signal to the 3rd node.
 ### The 3rd node waits for a warning from the 2nd node and prints out the warning on the terminal, once received.
