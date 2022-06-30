@@ -68,3 +68,44 @@
     6. Dosa is delivered(**response**).
 
 Option 1(Going to Dosa shop) is similar to a ROS Service, while option 2 is similar to a ROS Action.
+
+### In the above question, you have mentioned applications of the different types of node-to-node communication. For each application, propose a possible ROS architecture (graphically / pictorially) that could be used to implement it. (For your reference, the ROS architecture for communication between two nodes is provided)
+
+>
+
+### Is there a way to see or generate this architecture of node communication in ROS using a utility or software? If yes, mention it.
+
+> Yes, after executing commands for both of the nodes you can tyoe **rqt_graph** in the terminal to see this same architecture.
+
+### What are the different sensors and actuators involved in each subsystem of a typical rover?
+
+>**MOBILITY**
+* In rovers mostly there are 6 motors that turn the wheels, so the rover can move forward or backwards, and the 4 motors that turn the outer wheels around their axes, so the rover is maneuverable.
+* They also have a gear box on each motor with a fixed, very high ratio(a few thousand) for low speed and very high torque.
+* The current to each motor is independently controlled and monitored.
+* Also in motors, Brushed motors are good to go as brushless motors require permanent magnets whereas brushed motors can use electromagnets both for stator and rotor, also electromagnets are quite invulnerable against mechanical shock.
+
+>**POWER**
+* For power rover can rely on mainly two things- power installed in them and multi-panel solar array.
+* Power installed in them- This can be in the form of some batteries or better option is radioactive isotope that generates electricity from the heat of radioactive decay.
+* Multi-panel solar array- It converts the solar power into the electrical power that gets stored in a battery that can be used by the rover.
+
+>**NAVIGATION & COMMUNICATION**
+* A number of cameras having different optics for some specific task are installed in a rover for navigationing along with these some science investigation cameras also get added.
+* Antennas for signal transferring also play an important role in the navigation subsystem.
+* Talking about antennas rovers have low-gain(can send and receive info in every direction) and high-gain antennas(can send beam of info in specific direction).
+
+>**ROBOTIC ARM & TEMPERATURE SENSOR**
+* TORQUE sensors to know that how much force it is applying on the object to lift or examine.
+* CAMERA(microscopic imager) sensors on top of the manipulator which gives a visual feedback to researchers for further investigation.
+* Spectrometers are also installed to analyze the elemental composition of rocks and soil.
+* An abrasion tool that grinds away the outer surface of to expose fresh material.
+* Temperature sensors are required so that the components inside the rover can't get damaged.
+
+### Consider that there is a bot in front of a wall with a distance/proximity sensor mounted on it. This bot should stop moving once it reaches a certain distance from the wall. Design a ROS node communication system of three nodes to achieve this. (It is not needed to prepare a robot simulation, only basic node communication is required.)
+### The 1st node contains the sensor i.e., it should generate the sensor data (current distance from the wall).
+### The 2nd node obtains the sensor data from the 1st node and decides when the bot should stop moving. It also sends a warning signal to the 3rd node.
+### The 3rd node waits for a warning from the 2nd node and prints out the warning on the terminal, once received.
+
+> In the src file
+
