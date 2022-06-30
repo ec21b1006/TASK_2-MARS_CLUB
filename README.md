@@ -110,4 +110,3 @@ Option 1(Going to Dosa shop) is similar to a ROS Service, while option 2 is simi
 [!alt text](https://github.com/ec21b1006/screenshots/blob/main/Q6_rqt_graph.png)
 >
 >I have uploaded the PACKAGE for this question in this same repositery.
-
