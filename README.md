@@ -107,7 +107,7 @@ Option 1(Going to Dosa shop) is similar to a ROS Service, while option 2 is simi
 ### The 2nd node obtains the sensor data from the 1st node and decides when the bot should stop moving. It also sends a warning signal to the 3rd node.
 ### The 3rd node waits for a warning from the 2nd node and prints out the warning on the terminal, once received.
 
-[!alt text](https://github.com/ec21b1006/screenshots/Q6_rqt_graph.png)
+[!alt text](https://github.com/ec21b1006/screenshots/blob/main/Q6_rqt_graph.png)
 
 >I have uploaded the PACKAGE for this question in this repositery.
 
