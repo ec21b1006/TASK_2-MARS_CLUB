@@ -71,7 +71,7 @@ Option 1(Going to Dosa shop) is similar to a ROS Service, while option 2 is simi
 
 ### In the above question, you have mentioned applications of the different types of node-to-node communication. For each application, propose a possible ROS architecture (graphically / pictorially) that could be used to implement it. (For your reference, the ROS architecture for communication between two nodes is provided)
 
->
+> REFER to my screenshots(reference_ss);
 
 ### Is there a way to see or generate this architecture of node communication in ROS using a utility or software? If yes, mention it.
 
@@ -107,5 +107,7 @@ Option 1(Going to Dosa shop) is similar to a ROS Service, while option 2 is simi
 ### The 2nd node obtains the sensor data from the 1st node and decides when the bot should stop moving. It also sends a warning signal to the 3rd node.
 ### The 3rd node waits for a warning from the 2nd node and prints out the warning on the terminal, once received.
 
-> In the src file
+[!alt text](https://github.com/ec21b1006/screenshots/blob/main/Q6_rqt_graph.png)
+
+>I have uploaded the PACKAGE for this question in this repositery.
 
